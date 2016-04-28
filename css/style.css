@@ -1,0 +1,17 @@
+body {
+  font-family:'Roboto', sans-serif;
+  font-size:16px;
+  line-height:22px;
+  color:#283136;
+  font-weight:normal;
+  
+}
+.main-header {
+  background-color:#eeeeee ;
+  
+}
+
+   
+.map {
+  background-image: url("../img/map-with-nerds.jpg");
+}
