@@ -1,3 +1,15 @@
+ul, p, h1, h3, h2, h4 {
+  margin:0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 body {
   font-family:'Roboto', sans-serif;
   font-size:16px;
@@ -5,37 +17,39 @@ body {
   color:#283136;
   font-weight:normal;
   min-width: 1200px;
-  min-height: 2250px;
   margin: 0;
   padding: 0;
-}
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 .main-header {
   background-color:#eeeeee ;
   margin-bottom: 80px;
 } 
-.map {
-  background-image: url("../img/map-with-nerds.jpg");
-}
 .container {
-  width: 960px;
+  width: 880px;
   margin: 0 auto;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding: 0 10px;
+}
+.map {
+  width: 1200px;
+  min-height: 416px;
+  margin: 0 auto;
+  background-image: url("../img/map-with-nerds.png");
+ 
+  
+}
+.main-header h2 {
+  float:left;
 }
 .header-logo  {
   min-height: 56px;
-  width: 139px;
+  width: 140px;
   float: left;
 }
 .main-navigation {
   min-height: 30px;
-  width: 560px;
+  width: 720px;
   float: right;
+  padding-top: 50px;
 }
 .main-navigation li {
     display: inline-block;
@@ -45,7 +59,7 @@ body {
    clear: both;
 }
 main {
-  background: aqua;
+  background-color: white;
 }
 .fast-order {
   padding-bottom: 80px;
@@ -55,7 +69,6 @@ main {
   float : left;
   width:240px;
   margin-right: 80px;
-  background-color: gray;
 }
 .order:last-child {
   margin-right: 0px;
@@ -64,34 +77,124 @@ main {
   width: 620px;
   float: left;
   margin-right: 20px;
-  background-color:white;
 }
 .futures .right-side {
   float:right;
   width: 240px;
 }
 .portfolio {
-  height: 166px;
+  min-height: 166px;
   border-bottom: 2px solid #eeeeee;
   border-top: 2px solid #eeeeee;
-  background: yellow;
 }
 .portfolio a {
     display: inline-block;
     width: 220px;
     margin-right: 100px;
     text-align: center;
-    background: red;
     height: 166px;
-    float: left;
     vertical-align: middle;
+    line-height: 166px;
     
 }
 .portfolio a:last-child {
   width: 230 px;
   margin-right: 10px;
 }
+.map-adress {
+  width: 250px;
+  height: 240px;
+  background-color: white;
+  position: relative;
+  left: 160px;
+  top:88px;
+}
+.main-footer {
+  margin-top: 77px;
+  margin-bottom: 77px;
+  background-color: white;
+}
+.social { 
+  float:left;
+  margin-right:80px;
+}
+.friendly{
+  width:560px;
+  float:right;
+}
+/* стили каталога */
+.showcase {
+  float:right;
+  width: 560px;
+  
+}
+.sotr-by-type li {
+  display: inline-block;
+}
+.site-point {
+  float:left;
+  height: 270px;
+  width:240px;
+  margin-right:80px;
+  margin-bottom: 80px;
+  
+}
+.site-point:nth-child(2n){
+   margin-right:0px;
+}
 
-.portfolio a img {
+.browser-style {
+  height: 30px;
+  background-color:#f1f1f1;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  font-size: 0px;
+}
+.browser-point {
+  display: inline-block;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right:6px;
+  
+}
+.browser-point:first-child {
+  margin-left:12px;
+}
+.site-info{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  top:-220px;
+  left:20px;
+}
 
+aside {
+  float: left;
+  width:240px;
+}
+.site-img {
+  width: 240px;
+  height: 240px;
+}
+.page-navigation-btn {
+  display: block;
+  float: left;
+  width: 34px;
+  height: 34px;
+  border:2px solid #f1f1f1;
+  border-radius: 5px;
+  margin-right:10px;
+  background-color: #f1f1f1;  
+  }
+.ppage-n-active {
+  background-color: white;
+}
+
+.page-n-next {
+  width: 140px;
 }
