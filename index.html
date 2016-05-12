@@ -5,43 +5,71 @@
     <title>Дизайн-студия Nerds</title>
       <link href="css/normalize.css" rel="stylesheet">   
       <link href="css/style.css" rel="stylesheet">
-      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+          
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
         <div class="header-logo">
           <a href="#">
-            <img src="img/nerds-logo.png" alt="Nerds Дизайн Студия" width="139" height="56">
+            <img src="img/nerds-logo.png" alt="Nerds Дизайн Студия" width="140" height="56">
           </a>
         </div>
         <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#">Студия</a>
+            <li class="active">
+              <a>Студия</a>
             </li>
             <li>
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="catalog.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
             </li>
             <li class="cart">
-              <a href="#">Корзина</a>
+              <a href="#"><i class="icon-basket"></i>Корзина</a>
             </li>
           </ul>
         </nav>
         <div class="slider">
-          <h2> Долго, дорого, скрупулезно</h2>
-          <p> Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#" class="button">Узнать больше</a>
-          <div class="radio-button">
-            <a href="#">первый слайд</a>
-            <a href="#">второй слайд</a>
-            <a href="#">третий слайд</a>
+          <div class="slider-controls">
+            <i class="active"></i>
+            <i></i>
+            <i></i> 
+          </div>
+          <div class="slides">
+            <div class="slide">
+                <div class="slide-text">
+                  <div class="slide-title"> Долго, дорого,<br>
+                    скрупулезно.</div>
+                  <p> Математически выверенный дизайн <br>
+                  для вашего сайта или мобильного приложения.</p>
+                  <a href="#" class="slider-btn btn">Узнать больше</a>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <div class="slide-text">
+                  <div class="slide-title"> Любите ли вы математику,
+как любим ее мы?</div>
+                  <p> Нашим дизайнерам мы удаляем нейроны, ответственные<br>
+за креатив, чтобы дать им возможность все просчитать</p>
+                  <a href="#" class="slider-btn btn">Узнать больше</a>
+                </div>
+            </div>    
+            
+            <div class="slide">
+                <div class="slide-text">
+                  <div class="slide-title"> Только наркотики,<br>
+только хардкор!</div>
+                  <p> Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+                  <a href="#" class="slider-btn btn">Узнать больше</a>
+                </div>
+            </div>
+                                
           </div>
         </div>      
       </div> 
@@ -50,49 +78,43 @@
       <div class="container">
         <div class="fast-order clearfix">
           <div class="order">
-            <div class="logo sites">
-              <img src="img/logo-sites.png" alt="logo-sites" width="240" height="124">
-            </div>
-            <h2>Веб-сайты</h2>
+            <img src="img/logo-sites.png" alt="logo-sites" width="240" height="124">
+            <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="btn site">Заказать</a>
+            <a href="#" class="btn btn-site">Заказать</a>
           </div>
           <div class="order">
-            <div class="logo apps">
-              <img src="img/logo-apps.png" alt="logo-apps" width="240" height="124">
-            </div>
-            <h2>Приложения</h2>
+            <img src="img/logo-apps.png" alt="logo-apps" width="240" height="124">
+            <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStrore и Google Play</p>
-            <a href="#" class="btn apps">Заказать</a>
+            <a href="#" class="btn-apps btn">Заказать</a>
           </div>
           <div class="order">
-            <div class="logo presentation">
-              <img src="img/logo-presentation.png" alt="logo-presentation" width="240" height="124">
-            </div>
-            <h2>Презентации</h2>
+            <img src="img/logo-presentation.png" alt="logo-presentation" width="240" height="124">
+            <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#" class="btn apps">Заказать</a>
+            <a href="#" class="btn btn-pres">Заказать</a>
           </div>        
         </div>
         <div class="futures clearfix">
           <div class="left-side">
-            <h2>Мы — маленькая, но гордаядизайн-студия из Краснодара.</h2>
+            <h2>Мы — маленькая, но гордая <br>дизайн-студия из Краснодара.</h2>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
             <h3>Выполняем заказы на разработку:</h3>
-            <ul class="we-do">
-              <li class="futures-list">Веб-сайтов любой сложности</li>
-              <li class="futures-list">Мобильных приложений для iOS и Android</li>
-              <li class="futures-list">Слайдшоу и видео для корпоративных презентаций</li>
+            <ul>
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
-          <div сlass="right-side">
-            <img src="img/nerds-logo-biger.png" alt="nerds-logo-biger" width="187" height="75">
-            <span class="since-style">since 2004</span>  
+          <div class="right-side">
+            <img src="img/nerds-logo-biger.png" alt="nerds-logo-biger" width="240" height="75">
+            <div class="since-style">since 2004</div>  
             <h3>Как Мы работаем:</h3>
-            <ul class="how-we-do">
-              <li class="futures-list">С самоотдачей 146%</li>
-              <li class="futures-list">Соблюдая сроки на 100%</li>
-              <li class="futures-list">По предоплате 50%</li>
+            <ul>
+              <li>С самоотдачей 146%</li>
+              <li>Соблюдая сроки на 100%</li>
+              <li>По предоплате 50%</li>
             </ul>
           </div>
         </div>       
@@ -104,7 +126,7 @@
             <img src="img/pfolio-htmlacad.png" alt="Html Academy" width="199" height="68">
           </a>
           <a href="#" class="portfolio-img">
-            <img src="img/pfoloio-borodinsky.png" alt="Borodinsky Site" width="209" height="90">
+            <img src="img/pfoloio-borodinsky.png" alt="Borodinsky Site" width="209" height="86">
           </a>
         </div>
       </div>  
@@ -114,16 +136,16 @@
           <p>191186, Санкт-Петербург,
           ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a href="#" class="btn">Напишите нам</a>
+          <a href="#" class="btn write-us-btn">Напишите нам</a>
         </div>
       </div>      
     </main>
     <footer class="main-footer clearfix">
       <div class="container">
         <div class="social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn" href="#"><i class="icon-vk"></i></a>
+          <a class="social-btn" href="#"><i class="icon-facebook"></i></a>
+          <a class="social-btn" href="#"><i class="icon-instagramm"></i></a>
         </div>
         <div class="friendly">
           <h3>Давайте дружить, это выгодно!</h3>

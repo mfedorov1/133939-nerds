@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия Nerds- Магазин готовых шаблонов</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">   
     <link href="css/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/symbols-nerds.css" rel="stylesheet">    
   </head>
   <body>
     <header class="main-header">
@@ -18,23 +19,23 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Студия</a>
+              <a href="index.html">Студия</a>
             </li>
             <li>
               <a href="#">Клиенты</a>
             </li>
-            <li>
-              <a href="#">Магазин</a>
+            <li class="active">
+              <a>Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
             </li>
             <li class="cart">
-              <a href="#">Корзина</a>
+              <a href="#"><i class="icon-basket"></i>Корзина</a>
             </li>
           </ul>
         </nav>
-        <h2>Добро пожаловать в магазин готовых макетов</h2>    
+        <h2>Добро пожаловать в магазин<br> готовых макетов</h2>    
       </div> 
     </header>    
     <main>
@@ -45,160 +46,166 @@
                 Сортировать:
               </li>
               <li>
-                <a href="#">По цене</a>
+                <a href="#" class="sort-by-price active-sort">По цене</a>
               </li>
               <li>
-                <a href="#">По типу</a>
+                <a href="#" class="sort-by-type">По типу</a>
               </li>
               <li>
-                <a href="#">По Функционалу</a>
+                <a href="#" class="sort-by-functional">По Функционалу</a>
               </li>
               <li>
-                <a href="#">по возрастанию</a>
+                <a href="#" class="icon-down-dir active-up-down"></a>
               </li>
               <li>
-                <a href="#">По убыванию</a>
+                <a href="#" class="icon-up-dir" ></a>
               </li>
             </ul>
           <section class="catalog-sites clearfix">
-            
             <div class="site-point">
               <div class="browser-style">
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>              
+                <i></i>
+                <i></i>
+                <i></i>              
               </div>
               <div class="site-img">
                 <img src="img/site-aviator.jpg" alt="site-aviator" width="240" height="240">
               </div>
               <div class="site-info aviator">
-                <b>AVIATOR</b>
-                <p>Одностраничный макет с авторским дизайном</p>
-                <a href="#" class="btn">8 000 Р.</a>
+                <p class="maquette-name">AVIATOR</p>
+                <p class="maquette-descr">Одностраничный макет <br>с авторским дизайном</p>
+                <a href="#" class="btn shop-btn">8 000 Р.</a>
               </div>
             </div>
-            
             <div class="site-point">
               <div class="browser-style">
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>              
+                <i></i>
+                <i></i>
+                <i></i>              
               </div>
               <div class="site-img">
                 <img src="img/site-sunset.jpg" alt="site-sunset" width="240" height="240">
               </div>
               <div class="site-info sunset">
-                <b>SUNSET</b>
-                <p>Интернет-магазин с личным кабинетом</p>
-                <a href="#" class="btn">10 000 Р.</a>
+                <p class="maquette-name">SUNSET</p>
+                <p class="maquette-descr">Интернет-магазин <br>с личным кабинетом</p>
+                <a href="#" class="btn shop-btn">10 000 Р.</a>
               </div>
             </div>
-            
             <div class="site-point">
               <div class="browser-style">
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>              
+                <i></i>
+                <i></i>
+                <i></i>              
               </div>
               <div class="site-img">
                 <img src="img/site-forte.jpg" alt="site-forte" width="240" height="240">
               </div>
               <div class="site-info forte">
-                <b>FORTE</b>
-                <p>Отличный макет для личного блога</p>
-                <a href="#" class="btn">5 000 Р.</a>
+                <p class="maquette-name">FORTE</p>
+                <p class="maquette-descr">Отличный макет<br>для личного блога</p>
+                <a href="#" class="btn shop-btn">5 000 Р.</a>
               </div>
             </div>
-            
             <div class="site-point">
               <div class="browser-style">
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>              
+                <i></i>
+                <i></i>
+                <i></i>              
               </div>
               <div class="site-img">
                 <img src="img/site-thai.jpg" alt="site-thai" width="240" height="240">
               </div>      
               <div class="site-info thai">
-                <b>Modern Organic THAI</b>
-                <p>Сайт для ресторана быстрого питания</p>
-                <a href="#" class="btn">12 000 Р.</a>
+                <p class="maquette-name">Modern Organic THAI</p>
+                <p class="maquette-descr">Сайт для ресторана<br> быстрого питания</p>
+                <a href="#" class="btn shop-btn">12 000 Р.</a>
               </div>
             </div>
             <div class="site-point">
               <div class="browser-style">
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>              
+                <i></i>
+                <i></i>
+                <i></i>              
               </div>
               <div class="site-img">
                 <img src="img/site-avenue.jpg" alt="site-avenue" width="239" height="240">
               </div>
               <div class="site-info avenue">
-                <b>AVENUE</b>
-                <p>Макет для блога о путешествиях</p>
-                <a href="#" class="btn">8 000 Р.</a>
+                <p class="maquette-name">AVENUE</p>
+                <p class="maquette-descr">Макет для блога<br> о путешествиях</p>
+                <a href="#" class="btn shop-btn">8 000 Р.</a>
               </div>
             </div>
             <div class="site-point">
               <div class="browser-style">
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>
-                <span class="browser-point"></span>              
+                <i></i>
+                <i></i>
+                <i></i>              
               </div>
               <div class="site-img">
                 <img src="img/site-dovetail.jpg" alt="site-dovetail" width="239" height="240">
               </div>          
               <div class="site-info dovetail">
-                <b>DOVETAIL</b>
-                <p>Интернет-магазин с галереей товаров</p>
-                <a href="#" class="btn">14 000 Р.</a>
+                <p class="maquette-name">DOVETAIL</p>
+                <p class="maquette-descr">Интернет-магазин <br>с галереей товаров</p>
+                <a href="#" class="btn shop-btn">14 000 Р.</a>
               </div> 
           </section>
           
           <div class="page-navigation">
-            <a href="#1" class="page-navigation-btn page-n-active">1</a>
+            <a class="page-navigation-btn page-n-active">1</a>
             <a href="#2" class="page-navigation-btn">2</a>
             <a href="#3" class="page-navigation-btn">3</a>
             <a href="#next" class="page-navigation-btn page-n-next" >Следующая</a>
           </div>
         </article>
-        <aside class="clearfix">
+        <aside class="shop-filter clearfix">
           <form action="#" method="get">
             <div class="price-range">
-              <h3>Стоимость</h3>
-              <div class="scale">
-              </div>
-              <div class"price-inputs">
-                <span>от</span>
-                <input class="min-price" type="text" value="0">
-                <span>до</span>
-                <input class="min-price" type="text" value="15000">
-              </div>
+              <h3>Стоимость:</h3>
+              <div class="range-filter">
+                <div class="range-controlers">
+                  <div class="scale">
+                    <div class="active-bar" style="margin-left: 20%; width: 30%">
+                    </div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price" for="min-price">от 
+                    <input type="text" id="min-price" name="min-price" value="0">
+                  </label>
+                  <label class="max-price" for="max-price">до 
+                    <input type="text" id="max-price" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>              
             </div>
             <div class="site-grid">
-              <h3>Сетка</h3>
-              <input type="radio" id="radio-1" name="site-grid-1" checked>
-              <input type="radio" id="radio-2" name="site-grid-2">
-              <input type="radio" id="radio-3" name="site-grid-3">
-              <label for="grid-btn-1">Адаптивная</label>
-              <label for="grid-btn-2">Фиксированная</label>
-              <label for="grid-btn-3">Резиновая</label>
+              <h3>Сетка:</h3>
+              <input type="radio" id="radio-1" name="site-grid" checked>
+              <label for="radio-1">Адаптивная</label>
+              <input type="radio" id="radio-2" name="site-grid">
+              <label for="radio-2">Фиксированная</label>
+              <input type="radio" id="radio-3" name="site-grid">
+              <label for="radio-3">Резиновая</label>
             </div>
             <div class="site-features">
-              <h3>Особенности</h3> 
+              <h3>Особенности:</h3> 
               <input type="checkbox" id="chbox-1" name="site-features-1" checked>
-              <input type="checkbox" id="chbox-2" name="site-features-2">
-              <input type="checkbox" id="chbox-3" name="site-features-3" checked>
-              <input type="checkbox" id="chbox-4" name="site-features-4">
-              <input type="checkbox" id="chbox--5" name="site-features-5">
               <label for="chbox-1">Слайдер</label>
+              <input type="checkbox" id="chbox-2" name="site-features-2">
               <label for="chbox-2">Блок преимуществ</label>
+              <input type="checkbox" id="chbox-3" name="site-features-3" checked>
               <label for="chbox-3">Новости</label>
+              <input type="checkbox" id="chbox-4" name="site-features-4">
               <label for="chbox-4">Галерея</label>
+              <input type="checkbox" id="chbox-5" name="site-features-5">
               <label for="chbox-5">Корзина</label>
             </div>
-            <button class="btn" type="submit">Показать</btn> 
+            <button class="btn filter-btn" type="submit">Показать</btn> 
           </form> 
         </aside>
       </div>
@@ -208,16 +215,16 @@
           <p>191186, Санкт-Петербург,
           ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a href="#" class="btn">Напишите нам</a>
+          <a href="form.html" class="btn write-us-btn">Напишите нам</a>
         </div>
       </div>      
     </main>
     <footer class="main-footer clearfix">
       <div class="container">
         <div class="social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn" href="#"><i class="icon-vk"></i></a>
+          <a class="social-btn" href="#"><i class="icon-facebook"></i></a>
+          <a class="social-btn" href="#"><i class="icon-instagramm"></i></a>
         </div>
         <div class="friendly">
           <h3>Давайте дружить, это выгодно!</h3>
@@ -225,6 +232,23 @@
         </div>
       </div>
     </footer>
+    
+    <div class="modal-content">
+      <div class="modal-content-close">Закрыть</div>
+      <form class="write-us" action="/echo">
+        <div class="write-us-name">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required autofocus>
+        </div>
+        <div class="write-us-email">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+        </div>
+        <label for="write">Текст письма:</label>
+        <textarea name="write" id="write" cols="54" rows="5" placeholder="В свободной форме" required></textarea>
+        <button class="btn btn-modal" type="submit">Отправить</button>
+      </form>
+  </div>
   </body>
 </html>
 
