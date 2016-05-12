@@ -89,6 +89,51 @@ main {
   background-color: white;
 }
 
+/*стили карты*/
+.map {
+  width: 1200px;
+  min-height: 416px;
+  margin: 0 auto;
+  background-image: url("../img/map-with-nerds.png");
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 77px;
+  
+  
+}
+.map-adress {
+  width: 210px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  left: 160px;
+  top:88px;
+  padding: 24px 20px;
+}
+.map-adress p{
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.map-adress p:first-child{
+  color: black;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+.write-us-btn {
+  background: #fb565a;
+  margin-left: 3px;
+  width:204px; 
+}
+.write-us-btn:hover {
+  background: #d6494d;
+}
+.write-us-btn:active {
+  background: #b63538;
+  border-top:inset  3px #9b2d30;
+  padding-top: 7px;
+}
+
 
 
 
@@ -311,50 +356,6 @@ main {
 
 
 
-
-/*стили карты*/
-.map {
-  min-width: 1200px;
-  min-height: 416px;
-  margin: 0 auto;
-  background-image: url("../img/map-with-nerds.png");
-
-  position: relative;
-  margin-bottom: 77px;
-  
-}
-.map-adress {
-  width: 210px;
-  height: 200px;
-  background-color: white;
-  position: absolute;
-  left: 160px;
-  top:88px;
-  padding: 24px 20px;
-}
-.map-adress p{
-  line-height: 20px;
-  margin-bottom: 20px;
-}
-.map-adress p:first-child{
-  color: black;
-  text-transform: uppercase;
-  line-height: 30px;
-  margin-bottom: 12px;
-}
-.write-us-btn {
-  background: #fb565a;
-  margin-left: 3px;
-  width:204px; 
-}
-.write-us-btn:hover {
-  background: #d6494d;
-}
-.write-us-btn:active {
-  background: #b63538;
-  border-top:inset  3px #9b2d30;
-  padding-top: 7px;
-}
 
 
 
