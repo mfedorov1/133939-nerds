@@ -98,7 +98,13 @@ main {
   background-repeat: no-repeat;
   position: relative;
   margin-bottom: 77px;
-  
+}
+#map_canvas {
+  position: relative;
+  width:1200px; 
+  height: 416px;
+
+
   
 }
 .map-adress {
@@ -109,6 +115,7 @@ main {
   left: 160px;
   top:88px;
   padding: 24px 20px;
+  z-index: 10;
 }
 .map-adress p{
   line-height: 20px;
@@ -221,6 +228,12 @@ main {
   width:880px;
   float:left;
 }
+
+.slider input[type=radio] {
+    position:absolute;
+    opacity:0;
+}
+
 .slider-controls{
   position:absolute;
   bottom:95px;
@@ -231,7 +244,7 @@ main {
   z-index:100;
   line-height: 0px;
 }
-.slider-controls i{
+.slider-controls label{
   display: inline-block;
   vertical-align: middle;
   width:4px;
@@ -242,8 +255,10 @@ main {
   border-radius: 50%;
   margin:0 3px;
 }
-.slider-controls .active {
-  background: #c1c1c1;
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+    background:#c1c1c1;
 }
 .slide{
   position:absolute;
@@ -294,8 +309,14 @@ main {
 .slide {
   display: none;
 }
-.slide:nth-child(2){
-  display: block;
+#btn-1:checked ~ .slides .slide:nth-child(1) { 
+    display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) { 
+    display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) { 
+    display: block;
 }
 .main-header h2 {
   float:left;
@@ -727,6 +748,7 @@ main {
 .shop-filter {
   float: left;
   width:240px;
+  margin-bottom: 79px;
 }
 .shop-filter h3 {
   font-size: 18px;
@@ -741,6 +763,7 @@ main {
   font-size: 16px;
   margin-bottom:17px;
   vertical-align:middle;
+  cursor: pointer;
 }
 .shop-filter label:hover{
   color:black;
@@ -918,13 +941,30 @@ main {
 }
  
 
+
+
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 .modal-content{
   display: none;
-  position:absolute;
-  top:110%;
-  left:50%;
-  margin-top:380px;
-  margin-left:-330px;
+  position:fixed;
+  top:25%;
+  left:calc(50% - 230px);
   width:460px;
   padding-top:55px;
   padding-right:90px;
@@ -932,6 +972,14 @@ main {
   padding-left:80px;
   background:#fff;
   box-shadow:0 10px 40px rgba(0,0,0,.75);
+  z-index: 20;
+}
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .modal-content-close{
   position:absolute;
@@ -980,8 +1028,6 @@ main {
 .write-us input:focus,.write-us textarea:focus{
   border:2px solid #56bffb;
 }
-
-
 .btn-modal {
   width:460px;
   background: #fb565a; 
