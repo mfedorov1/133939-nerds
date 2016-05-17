@@ -63,7 +63,6 @@ body {
   font-size:16px;
   line-height:22px;
   color:#283136;
-  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-weight: 500;
@@ -91,7 +90,8 @@ main {
 
 /*стили карты*/
 .map {
-  width: 1200px;
+  max-width:1200px;
+  width: 100%;
   min-height: 416px;
   margin: 0 auto;
   background-image: url("../img/map-with-nerds.png");
@@ -100,12 +100,8 @@ main {
   margin-bottom: 77px;
 }
 #map_canvas {
-  position: relative;
-  width:1200px; 
+  width: inherit;
   height: 416px;
-
-
-  
 }
 .map-adress {
   width: 210px;
