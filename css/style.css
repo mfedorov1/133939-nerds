@@ -112,10 +112,12 @@ main {
   top:88px;
   padding: 24px 20px;
   z-index: 10;
+
 }
 .map-adress p{
   line-height: 20px;
   margin-bottom: 20px;
+  color:#666666;
 }
 .map-adress p:first-child{
   color: black;
@@ -571,40 +573,39 @@ main {
 .sotr-by-type li:nth-last-child(2) {
   margin-right: 6px;
 }
-.sotr-by-type li:last-child a, .sotr-by-type li:nth-last-child(2) a  {
+.sotr-by-type .icon-up-dir, .sotr-by-type .icon-down-dir{
   font-size: 23px;
   color: #c1c1c1;
   border:none;
   opacity: 1
-  
 }
 
-.sotr-by-type li a:hover{
+.sotr-by-type a:hover{
   border-bottom: 1px solid #00ca74;
   opacity: 1;
 }
-.sotr-by-type li a:active{
+.sotr-by-type a:active{
   border-bottom:none;
   opacity: 1;
 }
-.sotr-by-type li a.active-sort{
+.sotr-by-type a.active-sort{
   border-bottom:none;
   opacity: 1;
 }
-.sotr-by-type li:last-child a:hover, .sotr-by-type li:nth-last-child(2) a:hover  {
+.sotr-by-type .icon-up-dir:hover, .sotr-by-type .icon-down-dir:hover  {
   color: #b5b5b5;
   border:none;
 }
-.sotr-by-type li:last-child a:active, .sotr-by-type li:nth-last-child(2) a:active  {
+.sotr-by-type .icon-up-dir:active, .sotr-by-type .icon-down-dir:active  {
   color: #000000;
 }
-.sotr-by-type li a.active-up-down {
+.sotr-by-type .active-up-down {
   color: #00ca74;
 }
-.sotr-by-type li a.active-up-down:hover {
+.sotr-by-type .active-up-down:hover {
   color: #00ca74;
 }
-.sotr-by-type li a.active-up-down:active {
+.sotr-by-type .active-up-down:active {
   color: #00ca74;
 }
 .site-point {
@@ -620,28 +621,31 @@ main {
    margin-right:0px;
 }
 
-.browser-style {
-  height: 30px;
-  background-color:#f1f1f1;
-  border-top-left-radius:5px;
-  border-top-right-radius:5px;
-  font-size: 0px;
+
+.site-img {
+  width: 240px;
+  height: 240px;
+  border-top: 30px solid #f1f1f1;
+  border-radius: 5px 5px 0 0;
+  position: relative;
 }
-.browser-style i {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right:6px;
-  
+.site-img:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 17px 0 0 #fff,34px 0 0 #fff;
+    box-shadow: 17px 0 0 #fff,34px 0 0 #fff;
+    top: -20px;
+    left: 13px;
 }
-.browser-style i:first-child {
-  margin-left:12px;
+.site-point:hover .site-img{
+  border-top-color: #797979;
 }
+
+
 .site-info{
   width: 200px;
   height: 200px;
@@ -649,10 +653,6 @@ main {
   position: absolute;
   top:50px;
   left:20px;
-}
-.site-img {
-  width: 240px;
-  height: 240px;
 }
 .maquette-name{
   font-size: 18px;
@@ -683,9 +683,6 @@ main {
   background: #b63538;
   border-top:inset  3px #9b2d30;
   padding-top: 7px;
-}
-.site-point:hover .browser-style {
-  background-color:#797979;
 }
 .site-info {
   display: none;
@@ -940,18 +937,45 @@ main {
 
 
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+ 
+
+
+
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -972,10 +996,12 @@ main {
 }
 .modal-content-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 .modal-content-close{
   position:absolute;
